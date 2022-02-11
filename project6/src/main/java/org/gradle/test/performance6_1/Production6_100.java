@@ -7,6 +7,10 @@ public class Production6_100 extends org.gradle.test.performance5_1.Production5_
         this.property = "foo";
     }
 
+    public Production6_100(String property) {
+        this.property = property;
+    }
+
     public String getProperty() {
         return property;
     }

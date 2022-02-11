@@ -7,6 +7,10 @@ public class Production7_32 extends org.gradle.test.performance6_1.Production6_3
         this.property = "foo";
     }
 
+    public Production7_32(String property) {
+        this.property = property;
+    }
+
     public String getProperty() {
         return property;
     }

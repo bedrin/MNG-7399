@@ -1,6 +1,6 @@
 package org.gradle.test.performance9_3;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class Test9_226 {
     private final Production9_226 production = new Production9_226("value");

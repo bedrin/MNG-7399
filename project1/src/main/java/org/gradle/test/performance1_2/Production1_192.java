@@ -1,10 +1,14 @@
 package org.gradle.test.performance1_2;
 
-public class Production1_192  {
+public class Production1_192 {
     private final String property;
 
     public Production1_192() {
         this.property = "foo";
+    }
+
+    public Production1_192(String property) {
+        this.property = property;
     }
 
     public String getProperty() {
