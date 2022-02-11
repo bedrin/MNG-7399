@@ -1,1 +1,0 @@
-org.multiverse:multiverse:0.7.0;release

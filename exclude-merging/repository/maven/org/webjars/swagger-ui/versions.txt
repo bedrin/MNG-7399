@@ -1,1 +1,0 @@
-org.webjars:swagger-ui:2.1.4;release

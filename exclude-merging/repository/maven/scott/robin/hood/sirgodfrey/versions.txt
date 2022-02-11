@@ -1,2 +1,0 @@
-scott.robin.hood:sirgodfrey:0.40.0;release
-scott.robin.hood:sirgodfrey:0.38.1;release

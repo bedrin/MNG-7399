@@ -1,2 +1,0 @@
-tarantino.inglourious.basterds:bridgetvonhammersmark:0.7.2;release
-tarantino.inglourious.basterds:bridgetvonhammersmark:0.7.0;release

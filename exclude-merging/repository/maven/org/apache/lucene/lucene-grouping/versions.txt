@@ -1,1 +1,0 @@
-org.apache.lucene:lucene-grouping:4.7.0;release

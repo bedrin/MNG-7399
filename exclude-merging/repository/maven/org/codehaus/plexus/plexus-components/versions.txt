@@ -1,1 +1,0 @@
-org.codehaus.plexus:plexus-components:1.1.18;release

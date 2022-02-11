@@ -1,2 +1,0 @@
-io.reactivex:rxjava:1.1.8;release
-io.reactivex:rxjava:1.1.10;release

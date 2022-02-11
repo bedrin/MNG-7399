@@ -1,1 +1,0 @@
-com.google.apis:google-api-services-androidpublisher:v2-rev25-1.21.0;release

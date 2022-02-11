@@ -1,2 +1,0 @@
-tarantino.jackie.brown:markdargus:2.1.5;release
-tarantino.jackie.brown:markdargus:2.1.4;release

@@ -1,1 +1,0 @@
-com.google.api-client:google-api-client:1.22.0;release

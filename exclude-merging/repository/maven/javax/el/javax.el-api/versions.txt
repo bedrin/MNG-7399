@@ -1,2 +1,0 @@
-javax.el:javax.el-api:2.2.4;release
-javax.el:javax.el-api:2.2.5;release

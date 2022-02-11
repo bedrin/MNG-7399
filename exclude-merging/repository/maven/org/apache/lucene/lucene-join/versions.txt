@@ -1,1 +1,0 @@
-org.apache.lucene:lucene-join:4.7.0;release

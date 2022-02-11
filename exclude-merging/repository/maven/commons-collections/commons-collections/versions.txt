@@ -1,2 +1,0 @@
-commons-collections:commons-collections:3.2.1;release
-commons-collections:commons-collections:3.2.2;release

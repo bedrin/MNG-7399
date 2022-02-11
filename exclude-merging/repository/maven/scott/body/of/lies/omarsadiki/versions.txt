@@ -1,2 +1,0 @@
-scott.body.of.lies:omarsadiki:1.12.15;release
-scott.body.of.lies:omarsadiki:1.14.2;release

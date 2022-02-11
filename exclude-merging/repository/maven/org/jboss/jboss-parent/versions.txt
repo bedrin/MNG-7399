@@ -1,2 +1,0 @@
-org.jboss:jboss-parent:11;release
-org.jboss:jboss-parent:6;release

@@ -1,2 +1,0 @@
-com.fasterxml.jackson.module:jackson-module-jsonSchema:2.8.2;release
-com.fasterxml.jackson.module:jackson-module-jsonSchema:2.5.0;release

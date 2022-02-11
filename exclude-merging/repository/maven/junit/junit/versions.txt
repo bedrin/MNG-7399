@@ -1,2 +1,0 @@
-junit:junit:4.13.1;release
-junit:junit:4.12;release

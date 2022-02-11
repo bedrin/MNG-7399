@@ -1,1 +1,0 @@
-org.apache.httpcomponents:httpcomponents-asyncclient:4.1;release

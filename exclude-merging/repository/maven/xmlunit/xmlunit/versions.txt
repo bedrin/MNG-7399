@@ -1,2 +1,0 @@
-xmlunit:xmlunit:1.6;release
-xmlunit:xmlunit:1.5;release

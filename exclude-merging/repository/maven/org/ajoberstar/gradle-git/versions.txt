@@ -1,1 +1,0 @@
-org.ajoberstar:gradle-git:1.4.2;release

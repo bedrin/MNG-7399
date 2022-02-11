@@ -1,1 +1,0 @@
-com.sun.xml.bind.mvn:jaxb-parent:2.2.11;release

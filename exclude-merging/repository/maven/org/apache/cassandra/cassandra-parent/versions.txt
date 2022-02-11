@@ -1,1 +1,0 @@
-org.apache.cassandra:cassandra-parent:2.0.12;release

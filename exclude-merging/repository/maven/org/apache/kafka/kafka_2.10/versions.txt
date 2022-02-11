@@ -1,1 +1,0 @@
-org.apache.kafka:kafka_2.10:0.8.2.2-nflx.8;release

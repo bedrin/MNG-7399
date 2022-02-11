@@ -1,2 +1,0 @@
-net.spy:spymemcached:2.11.4+4;release
-net.spy:spymemcached:2.11.4+0;release

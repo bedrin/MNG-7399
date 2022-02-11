@@ -1,1 +1,0 @@
-org.assertj:assertj-parent-pom:2.1.4;release

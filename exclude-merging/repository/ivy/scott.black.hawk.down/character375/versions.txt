@@ -1,3 +1,0 @@
-scott.black.hawk.down:character375:1.49.0;release
-scott.black.hawk.down:character375:1.47.0;release
-scott.black.hawk.down:character375:1.50.0;snapshot

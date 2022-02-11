@@ -1,1 +1,0 @@
-org.apache.servicemix:servicemix-pom:3;release

@@ -1,1 +1,0 @@
-com.sun.jersey.contribs:jersey-multipart:1.19.1;release

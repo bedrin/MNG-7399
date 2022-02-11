@@ -1,1 +1,0 @@
-org.bouncycastle:bcpg-jdk16:1.46;release

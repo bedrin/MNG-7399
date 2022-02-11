@@ -1,2 +1,0 @@
-scott.gladiator:antoniusproximo:1.63;release
-scott.gladiator:antoniusproximo:1.65;release

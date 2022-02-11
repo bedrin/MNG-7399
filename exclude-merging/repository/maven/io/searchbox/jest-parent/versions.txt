@@ -1,1 +1,0 @@
-io.searchbox:jest-parent:0.1.7;release

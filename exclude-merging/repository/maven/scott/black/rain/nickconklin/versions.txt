@@ -1,2 +1,0 @@
-scott.black.rain:nickconklin:0.13;release
-scott.black.rain:nickconklin:0.15.0;release

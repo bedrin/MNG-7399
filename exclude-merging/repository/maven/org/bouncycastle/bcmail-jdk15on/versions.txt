@@ -1,1 +1,0 @@
-org.bouncycastle:bcmail-jdk15on:1.46;release

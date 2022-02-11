@@ -1,1 +1,0 @@
-net.saliman:gradle-cobertura-plugin:2.3.2;release

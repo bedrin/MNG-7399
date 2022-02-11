@@ -1,1 +1,0 @@
-org.mindrot:jbcrypt:0.3m;release

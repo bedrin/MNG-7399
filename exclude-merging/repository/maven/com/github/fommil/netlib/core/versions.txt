@@ -1,1 +1,0 @@
-com.github.fommil.netlib:core:1.1.2;release

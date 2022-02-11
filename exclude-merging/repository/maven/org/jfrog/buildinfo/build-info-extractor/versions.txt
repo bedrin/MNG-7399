@@ -1,1 +1,0 @@
-org.jfrog.buildinfo:build-info-extractor:2.5.5;release

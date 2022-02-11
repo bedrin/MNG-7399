@@ -1,2 +1,0 @@
-org.apache.httpcomponents:project:6;release
-org.apache.httpcomponents:project:7;release

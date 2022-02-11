@@ -1,2 +1,0 @@
-tarantino.jackie.brown:jackiebrown:0.6.5;release
-tarantino.jackie.brown:jackiebrown:0.4.1;release

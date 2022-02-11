@@ -1,1 +1,0 @@
-org.restlet:org.restlet:1.1-RC2;release

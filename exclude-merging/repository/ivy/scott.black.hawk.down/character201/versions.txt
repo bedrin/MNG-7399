@@ -1,3 +1,0 @@
-scott.black.hawk.down:character201:3.9;release
-scott.black.hawk.down:character201:3.12;release
-scott.black.hawk.down:character201:4.0;candidate

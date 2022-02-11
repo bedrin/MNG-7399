@@ -1,2 +1,0 @@
-scott.american.gangster:detrichardroberts:0.4.10.7;release
-scott.american.gangster:detrichardroberts:0.4.15.18;release

@@ -1,2 +1,0 @@
-scott.robin.hood:robinlongstride:0.40.0;release
-scott.robin.hood:robinlongstride:0.38.1;release

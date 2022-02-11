@@ -1,2 +1,0 @@
-net.sf.ehcache:ehcache:2.10.1;release
-net.sf.ehcache:ehcache:1.4.0;release
