@@ -397,5 +397,3 @@ Caused by: org.apache.maven.plugin.PluginParameterException: The parameters 'rep
 ```
 
 It works perfectly fine on any other JDK
-
-Workaround is to downgrade `maven-surefire-plugin` to version 
