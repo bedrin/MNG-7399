@@ -12,6 +12,28 @@ Default locale: en_GB, platform encoding: UTF-8
 OS name: "windows 11", version: "10.0", arch: "x86", family: "windows"
 ```
 
+Example of failure is shown below. Full log available here: https://raw.githubusercontent.com/bedrin/MNG-7399/master/build.log
+
+It looks like a race condition - it doesn't reproduce on GitHub actions runners for this synthetic project:
+https://github.com/bedrin/MNG-7399/actions/runs/1833480888
+
+But real projects do fail:
+https://github.com/sniffy/sniffy/runs/4958050103?check_suite_focus=true
+https://github.com/sniffy/sniffy/runs/4952023603?check_suite_focus=true
+https://github.com/sniffy/sniffy/runs/4950880395?check_suite_focus=true
+https://github.com/sniffy/sniffy/runs/4949994245?check_suite_focus=true
+https://github.com/sniffy/sniffy/runs/4894124289?check_suite_focus=true
+
+<details>
+<summary>
+
+```
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-clean-plugin:2.5:clean (default-clean) on project project8: The parameters 'reportDirectory' for goal org.apache.maven.plugins:maven-clean-plugin:2.5:clean are missing or invalid -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-clean-plugin:2.5:clean (default-clean) on project project8: The parameters 'reportDirectory' for goal org.apache.maven.plugins:maven-clean-plugin:2.5:clean are missing or invalid
+```
+
+</summary>
+
 ```
 [INFO] ------------------------< org.gradle:project8 >-------------------------
 [INFO] Building project8 1.0-SNAPSHOT                                    [9/10]
@@ -57,71 +79,71 @@ OS name: "windows 11", version: "10.0", arch: "x86", family: "windows"
 [DEBUG] Style:         Regular
 [DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
-  <directory default-value="${project.build.directory}"/>
-  <excludeDefaultDirectories default-value="false">${clean.excludeDefaultDirectories}</excludeDefaultDirectories>
-  <failOnError default-value="true">${maven.clean.failOnError}</failOnError>
-  <followSymLinks default-value="false">${clean.followSymLinks}</followSymLinks>
-  <outputDirectory default-value="${project.build.outputDirectory}"/>
-  <reportDirectory default-value="${project.reporting.outputDirectory}"/>
-  <retryOnError default-value="true">${maven.clean.retryOnError}</retryOnError>
-  <skip default-value="false">${clean.skip}</skip>
-  <testOutputDirectory default-value="${project.build.testOutputDirectory}"/>
-  <verbose>${clean.verbose}</verbose>
+<directory default-value="${project.build.directory}"/>
+<excludeDefaultDirectories default-value="false">${clean.excludeDefaultDirectories}</excludeDefaultDirectories>
+<failOnError default-value="true">${maven.clean.failOnError}</failOnError>
+<followSymLinks default-value="false">${clean.followSymLinks}</followSymLinks>
+<outputDirectory default-value="${project.build.outputDirectory}"/>
+<reportDirectory default-value="${project.reporting.outputDirectory}"/>
+<retryOnError default-value="true">${maven.clean.retryOnError}</retryOnError>
+<skip default-value="false">${clean.skip}</skip>
+<testOutputDirectory default-value="${project.build.testOutputDirectory}"/>
+<verbose>${clean.verbose}</verbose>
 </configuration>
 [DEBUG] -----------------------------------------------------------------------
 [DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:2.6:resources (default-resources)
 [DEBUG] Style:         Regular
 [DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
-  <buildFilters default-value="${project.build.filters}"/>
-  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
-  <escapeString>${maven.resources.escapeString}</escapeString>
-  <escapeWindowsPaths default-value="true">${maven.resources.escapeWindowsPaths}</escapeWindowsPaths>
-  <includeEmptyDirs default-value="false">${maven.resources.includeEmptyDirs}</includeEmptyDirs>
-  <outputDirectory default-value="${project.build.outputDirectory}"/>
-  <overwrite default-value="false">${maven.resources.overwrite}</overwrite>
-  <project default-value="${project}"/>
-  <resources default-value="${project.resources}"/>
-  <session default-value="${session}"/>
-  <supportMultiLineFiltering default-value="false">${maven.resources.supportMultiLineFiltering}</supportMultiLineFiltering>
-  <useBuildFilters default-value="true"/>
-  <useDefaultDelimiters default-value="true"/>
+<buildFilters default-value="${project.build.filters}"/>
+<encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+<escapeString>${maven.resources.escapeString}</escapeString>
+<escapeWindowsPaths default-value="true">${maven.resources.escapeWindowsPaths}</escapeWindowsPaths>
+<includeEmptyDirs default-value="false">${maven.resources.includeEmptyDirs}</includeEmptyDirs>
+<outputDirectory default-value="${project.build.outputDirectory}"/>
+<overwrite default-value="false">${maven.resources.overwrite}</overwrite>
+<project default-value="${project}"/>
+<resources default-value="${project.resources}"/>
+<session default-value="${session}"/>
+<supportMultiLineFiltering default-value="false">${maven.resources.supportMultiLineFiltering}</supportMultiLineFiltering>
+<useBuildFilters default-value="true"/>
+<useDefaultDelimiters default-value="true"/>
 </configuration>
 [DEBUG] -----------------------------------------------------------------------
 [DEBUG] Goal:          org.apache.maven.plugins:maven-compiler-plugin:3.9.0:compile (default-compile)
 [DEBUG] Style:         Regular
 [DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
-  <basedir default-value="${basedir}"/>
-  <buildDirectory default-value="${project.build.directory}"/>
-  <compilePath default-value="${project.compileClasspathElements}"/>
-  <compileSourceRoots default-value="${project.compileSourceRoots}"/>
-  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
-  <compilerReuseStrategy default-value="${reuseCreated}">${maven.compiler.compilerReuseStrategy}</compilerReuseStrategy>
-  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
-  <debug default-value="true">${maven.compiler.debug}</debug>
-  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
-  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
-  <executable>${maven.compiler.executable}</executable>
-  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
-  <failOnWarning default-value="false">${maven.compiler.failOnWarning}</failOnWarning>
-  <forceJavacCompilerUse default-value="false">${maven.compiler.forceJavacCompilerUse}</forceJavacCompilerUse>
-  <fork default-value="false">${maven.compiler.fork}</fork>
-  <generatedSourcesDirectory default-value="${project.build.directory}/generated-sources/annotations"/>
-  <maxmem>${maven.compiler.maxmem}</maxmem>
-  <meminitial>${maven.compiler.meminitial}</meminitial>
-  <mojoExecution default-value="${mojoExecution}"/>
-  <optimize default-value="false">${maven.compiler.optimize}</optimize>
-  <outputDirectory default-value="${project.build.outputDirectory}"/>
-  <parameters default-value="false">${maven.compiler.parameters}</parameters>
-  <project default-value="${project}"/>
-  <projectArtifact default-value="${project.artifact}"/>
-  <release>${maven.compiler.release}</release>
-  <session default-value="${session}"/>
-  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
-  <showWarnings default-value="false">${maven.compiler.showWarnings}</showWarnings>
-  <skipMain>${maven.main.skip}</skipMain>
-  <skipMultiThreadWarning default-value="false">${maven.compiler.skipMultiThreadWarning}</skipMultiThreadWarning>
+<basedir default-value="${basedir}"/>
+<buildDirectory default-value="${project.build.directory}"/>
+<compilePath default-value="${project.compileClasspathElements}"/>
+<compileSourceRoots default-value="${project.compileSourceRoots}"/>
+<compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
+<compilerReuseStrategy default-value="${reuseCreated}">${maven.compiler.compilerReuseStrategy}</compilerReuseStrategy>
+<compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+<debug default-value="true">${maven.compiler.debug}</debug>
+<debuglevel>${maven.compiler.debuglevel}</debuglevel>
+<encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+<executable>${maven.compiler.executable}</executable>
+<failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+<failOnWarning default-value="false">${maven.compiler.failOnWarning}</failOnWarning>
+<forceJavacCompilerUse default-value="false">${maven.compiler.forceJavacCompilerUse}</forceJavacCompilerUse>
+<fork default-value="false">${maven.compiler.fork}</fork>
+<generatedSourcesDirectory default-value="${project.build.directory}/generated-sources/annotations"/>
+<maxmem>${maven.compiler.maxmem}</maxmem>
+<meminitial>${maven.compiler.meminitial}</meminitial>
+<mojoExecution default-value="${mojoExecution}"/>
+<optimize default-value="false">${maven.compiler.optimize}</optimize>
+<outputDirectory default-value="${project.build.outputDirectory}"/>
+<parameters default-value="false">${maven.compiler.parameters}</parameters>
+<project default-value="${project}"/>
+<projectArtifact default-value="${project.artifact}"/>
+<release>${maven.compiler.release}</release>
+<session default-value="${session}"/>
+<showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+<showWarnings default-value="false">${maven.compiler.showWarnings}</showWarnings>
+<skipMain>${maven.main.skip}</skipMain>
+<skipMultiThreadWarning default-value="false">${maven.compiler.skipMultiThreadWarning}</skipMultiThreadWarning>
   <source default-value="1.7">1.8</source>
   <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
   <target default-value="1.7">1.8</target>
@@ -396,4 +418,6 @@ Caused by: org.apache.maven.plugin.PluginParameterException: The parameters 'rep
 [ERROR]   mvn <args> -rf :project8
 ```
 
-It works perfectly fine on any other JDK
+</details>
+
+It works perfectly fine on any other JDK.
