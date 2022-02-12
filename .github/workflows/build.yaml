@@ -17,7 +17,7 @@ jobs:
     strategy:
       matrix:
         java: [ 17, 18-ea, 19-ea ]
-        os: [ ubuntu-20.04, windows-2022 ]
+        os: [ ubuntu-20.04, windows-2019 ]
         architecture: [ x64, x86 ]
     name: Test JDK ${{ matrix.java }}, ${{ matrix.os }} ${{ matrix.architecture }}
     steps:
